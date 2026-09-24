@@ -1,0 +1,75 @@
+def chatbot():
+    print("===================================")
+    print("       Welcome to My Chatbot")
+    print("===================================")
+    print("Chatbot: Hello! I am a simple Python chatbot.")
+    print("Chatbot: You can talk to me.")
+    print("Chatbot: Type 'bye' whenever you want to exit.")
+    print("-----------------------------------")
+
+    while True:
+        user = input("You: ").lower()
+
+        if user == "hello" or user == "hi":
+            print("Chatbot: Hii! Nice to meet you.")
+
+        elif user == "how are you":
+            print("Chatbot: I am fine, thanks!")
+            print("Chatbot: How are you doing?")
+
+        elif user == "i am fine" or user == "i am good":
+            print("Chatbot: That's great to hear!")
+
+        elif user == "what is your name":
+            print("Chatbot: My name is Python Bot.")
+
+        elif user == "who are you":
+            print("Chatbot: I am a simple rule-based chatbot.")
+            print("Chatbot: I was created using Python.")
+
+        elif user == "good morning":
+            print("Chatbot: Good morning!")
+            print("Chatbot: I hope you have a great day.")
+
+        elif user == "good afternoon":
+            print("Chatbot: Good afternoon!")
+            print("Chatbot: How is your day going?")
+
+        elif user == "good evening":
+            print("Chatbot: Good evening!")
+            print("Chatbot: Nice to talk with you.")
+
+        elif user == "thank you" or user == "thanks":
+            print("Chatbot: You're welcome!")
+            print("Chatbot: Always happy to help.")
+
+        elif user == "what can you do":
+            print("Chatbot: I can answer some basic questions.")
+            print("Chatbot: You can say hello, ask how I am,")
+            print("Chatbot: ask my name, or say goodbye.")
+
+        elif user == "help":
+            print("Chatbot: Try saying:")
+            print("- hello")
+            print("- how are you")
+            print("- what is your name")
+            print("- good morning")
+            print("- thank you")
+            print("- bye")
+
+        elif user == "bye":
+            print("Chatbot: Goodbye!")
+            print("Chatbot: It was nice talking to you.")
+            print("Chatbot: Have a great day!")
+            break
+
+        else:
+            print("Chatbot: Sorry, I don't understand that.")
+            print("Chatbot: Type 'help' to see what I can understand.")
+
+    print("-----------------------------------")
+    print("Chatbot program ended.")
+    print("Thank you for using my chatbot!")
+
+
+chatbot()
